@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170516 14:36:44.478" generator="Robot 3.0 (Python 2.7.10 on win32)">
+<suite source="C:\Projects\Dialler\ODDemo\Tests" id="s1" name="Tests">
+<suite source="C:\Projects\Dialler\ODDemo\Tests\Demo.robot" id="s1-s1" name="Demo">
+<test id="s1-s1-t1" name="Test MyOrange localization">
+<kw type="setup" name="Run Keywords" library="BuiltIn">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>Launch dialer</arg>
+<arg>Navigate to my orange</arg>
+</arguments>
+<kw name="Launch dialer" library="basicdialersetups">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=${device}</arg>
+<arg>udid=${device}</arg>
+<arg>appPackage=${ODM_package}</arg>
+<arg>appActivity=${ODM_AppActivity}</arg>
+<arg>unicodeKeyboard=True</arg>
+</arguments>
+<status status="PASS" endtime="20170516 14:37:02.094" starttime="20170516 14:36:44.852"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:37:02.094" starttime="20170516 14:36:44.852"></status>
+</kw>
+<kw name="Navigate to my orange" library="Home">
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Myorange_tab}</arg>
+</arguments>
+<msg timestamp="20170516 14:37:02.095" level="INFO">Clicking element 'xpath=//android.widget.ImageView[@content-desc='VAS']'.</msg>
+<status status="PASS" endtime="20170516 14:37:09.547" starttime="20170516 14:37:02.095"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:37:09.547" starttime="20170516 14:37:02.094"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:37:09.548" starttime="20170516 14:36:44.851"></status>
+</kw>
+<kw name="Check For Elements Existance">
+<arguments>
+<arg>${myPlan}</arg>
+</arguments>
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20170516 14:37:09.689" level="INFO">Current page contains element 'xpath=//android.widget.TextView[@text='نوع العرض']'.</msg>
+<status status="PASS" endtime="20170516 14:37:09.690" starttime="20170516 14:37:09.550"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:37:09.690" starttime="20170516 14:37:09.549"></status>
+</kw>
+<kw name="Check For Elements Existance">
+<arguments>
+<arg>${myBalance}</arg>
+</arguments>
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20170516 14:37:09.864" level="INFO">Current page contains element 'xpath=//android.widget.TextView[@text='الرصيد']'.</msg>
+<status status="PASS" endtime="20170516 14:37:09.865" starttime="20170516 14:37:09.692"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:37:09.865" starttime="20170516 14:37:09.691"></status>
+</kw>
+<kw name="Check For Elements Existance">
+<arguments>
+<arg>${Recharge}</arg>
+</arguments>
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20170516 14:37:10.015" level="INFO">Current page contains element 'xpath=//android.widget.TextView[@text='اعاده الشحن']'.</msg>
+<status status="PASS" endtime="20170516 14:37:10.015" starttime="20170516 14:37:09.867"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:37:10.016" starttime="20170516 14:37:09.866"></status>
+</kw>
+<kw name="Check For Elements Existance">
+<arguments>
+<arg>${sos}</arg>
+</arguments>
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20170516 14:37:10.146" level="INFO">Current page contains element 'xpath=//android.widget.TextView[@text='رصيد الطوارئ']'.</msg>
+<status status="PASS" endtime="20170516 14:37:10.146" starttime="20170516 14:37:10.018"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:37:10.146" starttime="20170516 14:37:10.017"></status>
+</kw>
+<kw name="Check For Elements Existance">
+<arguments>
+<arg>${buyBundle}</arg>
+</arguments>
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20170516 14:37:10.295" level="INFO">Current page contains element 'xpath=//android.widget.TextView[@text='شراء حزم']'.</msg>
+<status status="PASS" endtime="20170516 14:37:10.296" starttime="20170516 14:37:10.148"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:37:10.296" starttime="20170516 14:37:10.147"></status>
+</kw>
+<kw name="Check For Elements Existance">
+<arguments>
+<arg>${payBills}</arg>
+</arguments>
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20170516 14:37:10.447" level="INFO">Current page contains element 'xpath=//android.widget.TextView[@text='دفع الفواتير']'.</msg>
+<status status="PASS" endtime="20170516 14:37:10.447" starttime="20170516 14:37:10.298"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:37:10.447" starttime="20170516 14:37:10.297"></status>
+</kw>
+<kw name="Check For Elements Existance">
+<arguments>
+<arg>${tikramPoints}</arg>
+</arguments>
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20170516 14:37:10.602" level="INFO">Current page contains element 'xpath=//android.widget.TextView[@text='برنامج تكرم للمكافئات']'.</msg>
+<status status="PASS" endtime="20170516 14:37:10.602" starttime="20170516 14:37:10.450"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:37:10.603" starttime="20170516 14:37:10.448"></status>
+</kw>
+<kw type="teardown" name="Close dialer app" library="basicdialersetups">
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application.</doc>
+<status status="PASS" endtime="20170516 14:37:12.457" starttime="20170516 14:37:10.621"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:37:12.457" starttime="20170516 14:37:10.620"></status>
+</kw>
+<tags>
+<tag>debugit</tag>
+<tag>Demo</tag>
+<tag>MyOrange</tag>
+</tags>
+<status status="PASS" endtime="20170516 14:37:12.459" critical="yes" starttime="20170516 14:36:44.850"></status>
+</test>
+<test id="s1-s1-t2" name="Test MyOrange localization p2">
+<kw type="setup" name="Run Keywords" library="BuiltIn">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>Open my orange page</arg>
+<arg>custome scroll down</arg>
+</arguments>
+<kw name="Open my orange page">
+<kw name="Launch dialer" library="basicdialersetups">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=${device}</arg>
+<arg>udid=${device}</arg>
+<arg>appPackage=${ODM_package}</arg>
+<arg>appActivity=${ODM_AppActivity}</arg>
+<arg>unicodeKeyboard=True</arg>
+</arguments>
+<status status="PASS" endtime="20170516 14:37:29.468" starttime="20170516 14:37:12.463"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:37:29.469" starttime="20170516 14:37:12.462"></status>
+</kw>
+<kw name="Navigate to my orange" library="Home">
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Myorange_tab}</arg>
+</arguments>
+<msg timestamp="20170516 14:37:29.470" level="INFO">Clicking element 'xpath=//android.widget.ImageView[@content-desc='VAS']'.</msg>
+<status status="PASS" endtime="20170516 14:37:37.329" starttime="20170516 14:37:29.470"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:37:37.329" starttime="20170516 14:37:29.469"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:37:37.330" starttime="20170516 14:37:12.462"></status>
+</kw>
+<kw name="Custome scroll down" library="basicdialersetups">
+<kw name="Run" library="OperatingSystem">
+<doc>Runs the given command in the system and returns the output.</doc>
+<arguments>
+<arg>adb -s ${device} shell input swipe 24 682 20 202 100</arg>
+</arguments>
+<assign>
+<var>${output}</var>
+</assign>
+<msg timestamp="20170516 14:37:37.338" level="INFO">Running command 'adb -s HI69L0U8A043MR shell input swipe 24 682 20 202 100 2&gt;&amp;1'.</msg>
+<msg timestamp="20170516 14:37:39.389" level="INFO">${output} = </msg>
+<status status="PASS" endtime="20170516 14:37:39.389" starttime="20170516 14:37:37.331"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:37:39.389" starttime="20170516 14:37:37.330"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:37:39.389" starttime="20170516 14:37:12.462"></status>
+</kw>
+<kw name="Check For Elements Existance">
+<arguments>
+<arg>${orangeOffers}</arg>
+</arguments>
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20170516 14:37:39.854" level="INFO">Current page contains element 'xpath=//android.widget.TextView[@text='عروض Orange']'.</msg>
+<status status="PASS" endtime="20170516 14:37:39.854" starttime="20170516 14:37:39.394"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:37:39.855" starttime="20170516 14:37:39.393"></status>
+</kw>
+<kw name="Check For Elements Existance">
+<arguments>
+<arg>${orangeServices}</arg>
+</arguments>
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20170516 14:37:40.007" level="INFO">Current page contains element 'xpath=//android.widget.TextView[@text='خدمات Orange']'.</msg>
+<status status="PASS" endtime="20170516 14:37:40.007" starttime="20170516 14:37:39.857"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:37:40.008" starttime="20170516 14:37:39.856"></status>
+</kw>
+<kw name="Check For Elements Existance">
+<arguments>
+<arg>${deviceCatalog}</arg>
+</arguments>
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20170516 14:37:40.175" level="INFO">Current page contains element 'xpath=//android.widget.TextView[@text='كتالوج الاجهزة']'.</msg>
+<status status="PASS" endtime="20170516 14:37:40.175" starttime="20170516 14:37:40.009"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:37:40.175" starttime="20170516 14:37:40.008"></status>
+</kw>
+<kw name="Check For Elements Existance">
+<arguments>
+<arg>${ItemOrder}</arg>
+</arguments>
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20170516 14:37:40.589" level="INFO">Current page contains element 'xpath=//android.widget.RelativeLayout'.</msg>
+<status status="PASS" endtime="20170516 14:37:40.589" starttime="20170516 14:37:40.178"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:37:40.589" starttime="20170516 14:37:40.177"></status>
+</kw>
+<kw type="teardown" name="Close dialer app" library="basicdialersetups">
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application.</doc>
+<status status="PASS" endtime="20170516 14:37:42.438" starttime="20170516 14:37:40.593"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:37:42.439" starttime="20170516 14:37:40.593"></status>
+</kw>
+<tags>
+<tag>debugit</tag>
+<tag>Demo</tag>
+<tag>MyOrange</tag>
+</tags>
+<status status="PASS" endtime="20170516 14:37:42.442" critical="yes" starttime="20170516 14:37:12.461"></status>
+</test>
+<status status="PASS" endtime="20170516 14:37:42.445" starttime="20170516 14:36:44.524"></status>
+</suite>
+<suite source="C:\Projects\Dialler\ODDemo\Tests\smoketest" id="s1-s2" name="Smoketest">
+<suite source="C:\Projects\Dialler\ODDemo\Tests\smoketest\AccessDialpadFromDifferentScreens.robot" id="s1-s2-s1" name="AccessDialpadFromDifferentScreens">
+<test id="s1-s2-s1-t1" name="Access Dialpad from Recent tab">
+<kw type="setup" name="Launch dialer" library="basicdialersetups">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=${device}</arg>
+<arg>udid=${device}</arg>
+<arg>appPackage=${ODM_package}</arg>
+<arg>appActivity=${ODM_AppActivity}</arg>
+<arg>unicodeKeyboard=True</arg>
+</arguments>
+<status status="PASS" endtime="20170516 14:37:59.579" starttime="20170516 14:37:42.537"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:37:59.579" starttime="20170516 14:37:42.536"></status>
+</kw>
+<kw name="Navigate to call log" library="Home">
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Call_Log_tab}</arg>
+</arguments>
+<msg timestamp="20170516 14:37:59.582" level="INFO">Clicking element 'xpath=//android.widget.ImageView[@content-desc='Recents' or @content-desc='الأخيره']'.</msg>
+<status status="PASS" endtime="20170516 14:38:04.363" starttime="20170516 14:37:59.581"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:38:04.363" starttime="20170516 14:37:59.581"></status>
+</kw>
+<kw name="Click dialpad button" library="CallLog">
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Dialpad}</arg>
+</arguments>
+<msg timestamp="20170516 14:38:04.366" level="INFO">Clicking element 'xpath=//android.widget.ImageButton'.</msg>
+<status status="PASS" endtime="20170516 14:38:05.708" starttime="20170516 14:38:04.365"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:38:05.708" starttime="20170516 14:38:04.364"></status>
+</kw>
+<kw name="Verify dialpad loaded" library="Dialtacts">
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>${dial_pad_view}</arg>
+</arguments>
+<msg timestamp="20170516 14:38:06.972" level="INFO">Current page contains element 'xpath=//android.widget.LinearLayout[contains(@resource-id,':id/dialpad_view')]'.</msg>
+<status status="PASS" endtime="20170516 14:38:06.973" starttime="20170516 14:38:05.710"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:38:06.973" starttime="20170516 14:38:05.710"></status>
+</kw>
+<kw type="teardown" name="Close dialer app" library="basicdialersetups">
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application.</doc>
+<status status="PASS" endtime="20170516 14:38:08.839" starttime="20170516 14:38:06.975"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:38:08.839" starttime="20170516 14:38:06.974"></status>
+</kw>
+<tags>
+<tag>demo</tag>
+</tags>
+<status status="PASS" endtime="20170516 14:38:08.856" critical="yes" starttime="20170516 14:37:42.535"></status>
+</test>
+<test id="s1-s2-s1-t2" name="Access Dialpad from Favorites tab">
+<kw type="setup" name="Launch dialer" library="basicdialersetups">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=${device}</arg>
+<arg>udid=${device}</arg>
+<arg>appPackage=${ODM_package}</arg>
+<arg>appActivity=${ODM_AppActivity}</arg>
+<arg>unicodeKeyboard=True</arg>
+</arguments>
+<status status="PASS" endtime="20170516 14:38:25.969" starttime="20170516 14:38:08.864"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:38:25.970" starttime="20170516 14:38:08.864"></status>
+</kw>
+<kw name="Navigate to favorites" library="Home">
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Favorites_tab}</arg>
+</arguments>
+<msg timestamp="20170516 14:38:25.973" level="INFO">Clicking element 'xpath=//android.widget.ImageView[@content-desc='Favorites' or @content-desc='المفضله']'.</msg>
+<status status="PASS" endtime="20170516 14:38:30.349" starttime="20170516 14:38:25.972"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:38:30.349" starttime="20170516 14:38:25.971"></status>
+</kw>
+<kw name="Click dialpad button" library="Favorites">
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Dialpad}</arg>
+</arguments>
+<msg timestamp="20170516 14:38:30.352" level="INFO">Clicking element 'xpath=//android.widget.ImageButton'.</msg>
+<status status="PASS" endtime="20170516 14:38:32.098" starttime="20170516 14:38:30.351"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:38:32.099" starttime="20170516 14:38:30.350"></status>
+</kw>
+<kw name="Verify dialpad loaded" library="Dialtacts">
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>${dial_pad_view}</arg>
+</arguments>
+<msg timestamp="20170516 14:38:32.484" level="INFO">Current page contains element 'xpath=//android.widget.LinearLayout[contains(@resource-id,':id/dialpad_view')]'.</msg>
+<status status="PASS" endtime="20170516 14:38:32.485" starttime="20170516 14:38:32.102"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:38:32.485" starttime="20170516 14:38:32.101"></status>
+</kw>
+<kw type="teardown" name="Close dialer app" library="basicdialersetups">
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application.</doc>
+<status status="PASS" endtime="20170516 14:38:34.348" starttime="20170516 14:38:32.488"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:38:34.348" starttime="20170516 14:38:32.486"></status>
+</kw>
+<tags>
+<tag>demo</tag>
+</tags>
+<status status="PASS" endtime="20170516 14:38:34.358" critical="yes" starttime="20170516 14:38:08.863"></status>
+</test>
+<test id="s1-s2-s1-t3" name="Access Dialpad from MyOrange tab">
+<kw type="setup" name="Launch dialer" library="basicdialersetups">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=${device}</arg>
+<arg>udid=${device}</arg>
+<arg>appPackage=${ODM_package}</arg>
+<arg>appActivity=${ODM_AppActivity}</arg>
+<arg>unicodeKeyboard=True</arg>
+</arguments>
+<status status="PASS" endtime="20170516 14:38:51.187" starttime="20170516 14:38:34.363"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:38:51.187" starttime="20170516 14:38:34.362"></status>
+</kw>
+<kw name="Navigate to my orange" library="Home">
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Myorange_tab}</arg>
+</arguments>
+<msg timestamp="20170516 14:38:51.197" level="INFO">Clicking element 'xpath=//android.widget.ImageView[@content-desc='VAS']'.</msg>
+<status status="PASS" endtime="20170516 14:38:58.887" starttime="20170516 14:38:51.197"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:38:58.888" starttime="20170516 14:38:51.196"></status>
+</kw>
+<kw name="CLick Dialpad button" library="MyOrange">
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Dialpad}</arg>
+</arguments>
+<msg timestamp="20170516 14:38:58.890" level="INFO">Clicking element 'xpath=//android.widget.ImageButton'.</msg>
+<status status="PASS" endtime="20170516 14:38:59.850" starttime="20170516 14:38:58.890"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:38:59.850" starttime="20170516 14:38:58.889"></status>
+</kw>
+<kw name="Verify dialpad loaded" library="Dialtacts">
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>${dial_pad_view}</arg>
+</arguments>
+<msg timestamp="20170516 14:39:01.390" level="INFO">Current page contains element 'xpath=//android.widget.LinearLayout[contains(@resource-id,':id/dialpad_view')]'.</msg>
+<status status="PASS" endtime="20170516 14:39:01.390" starttime="20170516 14:38:59.852"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:39:01.391" starttime="20170516 14:38:59.851"></status>
+</kw>
+<kw type="teardown" name="Close dialer app" library="basicdialersetups">
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application.</doc>
+<status status="PASS" endtime="20170516 14:39:03.373" starttime="20170516 14:39:01.392"></status>
+</kw>
+<status status="PASS" endtime="20170516 14:39:03.373" starttime="20170516 14:39:01.392"></status>
+</kw>
+<tags>
+<tag>demo</tag>
+</tags>
+<status status="PASS" endtime="20170516 14:39:03.374" critical="yes" starttime="20170516 14:38:34.360"></status>
+</test>
+<status status="PASS" endtime="20170516 14:39:03.379" starttime="20170516 14:37:42.460"></status>
+</suite>
+<status status="PASS" endtime="20170516 14:39:03.383" starttime="20170516 14:37:42.457"></status>
+</suite>
+<status status="PASS" endtime="20170516 14:39:03.387" starttime="20170516 14:36:44.482"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="5">Critical Tests</stat>
+<stat fail="0" pass="5">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="2">debugit</stat>
+<stat fail="0" pass="5">Demo</stat>
+<stat fail="0" pass="2">MyOrange</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Tests" pass="5">Tests</stat>
+<stat fail="0" id="s1-s1" name="Demo" pass="2">Tests.Demo</stat>
+<stat fail="0" id="s1-s2" name="Smoketest" pass="3">Tests.Smoketest</stat>
+<stat fail="0" id="s1-s2-s1" name="AccessDialpadFromDifferentScreens" pass="3">Tests.Smoketest.AccessDialpadFromDifferentScreens</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

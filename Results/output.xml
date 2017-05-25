@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170525 13:49:15.700" generator="Robot 3.0 (Python 2.7.10 on win32)">
+<suite source="C:\Projects\Dialler\ODDemo\Tests\Localization\Favorites.robot" id="s1" name="Favorites">
+<test id="s1-t1" name="Test template for localization">
+<kw type="setup" name="Launch dialer" library="basicdialersetups">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=${device}</arg>
+<arg>udid=${device}</arg>
+<arg>appPackage=${ODM_package}</arg>
+<arg>appActivity=${ODM_AppActivity}</arg>
+<arg>unicodeKeyboard=True</arg>
+</arguments>
+<status status="PASS" endtime="20170525 13:49:30.814" starttime="20170525 13:49:15.872"></status>
+</kw>
+<status status="PASS" endtime="20170525 13:49:30.814" starttime="20170525 13:49:15.872"></status>
+</kw>
+<kw name="Check For Elements Existance TwoArg" library="basicdialersetups">
+<arguments>
+<arg>${Favorite_page}</arg>
+<arg>${false}</arg>
+</arguments>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${swipFlag}== True</arg>
+<arg>Custome scroll down</arg>
+</arguments>
+<status status="PASS" endtime="20170525 13:49:30.814" starttime="20170525 13:49:30.814"></status>
+</kw>
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20170525 13:49:34.362" level="INFO">Current page contains element 'xpath=//android.widget.TextView[@text='المفضلة' ]'.</msg>
+<status status="PASS" endtime="20170525 13:49:34.362" starttime="20170525 13:49:30.814"></status>
+</kw>
+<status status="PASS" endtime="20170525 13:49:34.362" starttime="20170525 13:49:30.814"></status>
+</kw>
+<kw name="Check For Elements Existance TwoArg" library="basicdialersetups">
+<arguments>
+<arg>${Elgawal_text}</arg>
+<arg>${false}</arg>
+</arguments>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${swipFlag}== True</arg>
+<arg>Custome scroll down</arg>
+</arguments>
+<status status="PASS" endtime="20170525 13:49:34.362" starttime="20170525 13:49:34.362"></status>
+</kw>
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20170525 13:49:34.580" level="INFO">Current page contains element 'xpath=//*[contains(@resource-id,':id/contact_tile_phone_type') and @text='هاتف محمول']'.</msg>
+<status status="PASS" endtime="20170525 13:49:34.580" starttime="20170525 13:49:34.362"></status>
+</kw>
+<status status="PASS" endtime="20170525 13:49:34.580" starttime="20170525 13:49:34.362"></status>
+</kw>
+<kw name="Check For Elements Existance TwoArg" library="basicdialersetups">
+<arguments>
+<arg>${Repeated_Contacts}</arg>
+<arg>${true}</arg>
+</arguments>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${swipFlag}== True</arg>
+<arg>Custome scroll down</arg>
+</arguments>
+<kw name="Custome scroll down" library="basicdialersetups">
+<kw name="Run" library="OperatingSystem">
+<doc>Runs the given command in the system and returns the output.</doc>
+<arguments>
+<arg>adb -s ${device} shell input swipe 24 682 20 202 100</arg>
+</arguments>
+<assign>
+<var>${output}</var>
+</assign>
+<msg timestamp="20170525 13:49:34.596" level="INFO">Running command 'adb -s HI69L0U8A043MR shell input swipe 24 682 20 202 100 2&gt;&amp;1'.</msg>
+<msg timestamp="20170525 13:49:36.206" level="INFO">${output} = </msg>
+<status status="PASS" endtime="20170525 13:49:36.206" starttime="20170525 13:49:34.596"></status>
+</kw>
+<status status="PASS" endtime="20170525 13:49:36.206" starttime="20170525 13:49:34.596"></status>
+</kw>
+<status status="PASS" endtime="20170525 13:49:36.206" starttime="20170525 13:49:34.596"></status>
+</kw>
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20170525 13:49:36.768" level="INFO">Current page contains element 'xpath=//android.widget.TextView[@text='اتصالات مكررة']'.</msg>
+<status status="PASS" endtime="20170525 13:49:36.768" starttime="20170525 13:49:36.221"></status>
+</kw>
+<status status="PASS" endtime="20170525 13:49:36.768" starttime="20170525 13:49:34.580"></status>
+</kw>
+<kw name="Check For Elements Existance TwoArg" library="basicdialersetups">
+<arguments>
+<arg>${Elgawal_Label}</arg>
+<arg>${true}</arg>
+</arguments>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${swipFlag}== True</arg>
+<arg>Custome scroll down</arg>
+</arguments>
+<kw name="Custome scroll down" library="basicdialersetups">
+<kw name="Run" library="OperatingSystem">
+<doc>Runs the given command in the system and returns the output.</doc>
+<arguments>
+<arg>adb -s ${device} shell input swipe 24 682 20 202 100</arg>
+</arguments>
+<assign>
+<var>${output}</var>
+</assign>
+<msg timestamp="20170525 13:49:36.784" level="INFO">Running command 'adb -s HI69L0U8A043MR shell input swipe 24 682 20 202 100 2&gt;&amp;1'.</msg>
+<msg timestamp="20170525 13:49:38.378" level="INFO">${output} = </msg>
+<status status="PASS" endtime="20170525 13:49:38.378" starttime="20170525 13:49:36.784"></status>
+</kw>
+<status status="PASS" endtime="20170525 13:49:38.378" starttime="20170525 13:49:36.784"></status>
+</kw>
+<status status="PASS" endtime="20170525 13:49:38.378" starttime="20170525 13:49:36.768"></status>
+</kw>
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20170525 13:49:38.643" level="INFO">Current page contains element 'xpath=//*[contains(@resource-id,':id/frequent_phone_label') and @text='هاتف محمول']'.</msg>
+<status status="PASS" endtime="20170525 13:49:38.643" starttime="20170525 13:49:38.378"></status>
+</kw>
+<status status="PASS" endtime="20170525 13:49:38.659" starttime="20170525 13:49:36.768"></status>
+</kw>
+<kw type="teardown" name="Close dialer app" library="basicdialersetups">
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application.</doc>
+<status status="PASS" endtime="20170525 13:49:40.425" starttime="20170525 13:49:38.659"></status>
+</kw>
+<status status="PASS" endtime="20170525 13:49:40.425" starttime="20170525 13:49:38.659"></status>
+</kw>
+<status status="PASS" endtime="20170525 13:49:40.425" critical="yes" starttime="20170525 13:49:15.872"></status>
+</test>
+<status status="PASS" endtime="20170525 13:49:40.441" starttime="20170525 13:49:15.700"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Favorites" pass="1">Favorites</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
