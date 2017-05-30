@@ -16,7 +16,7 @@ Assert localized item existance
 *** Test Cases ***
 Test template for localization
     #[Tags]  demo
-    # you can't write 2 templates at same time you should write only one
+    # you can't write 2 templates at same testcase you should write only one
     # this template takes 2 arguments first is element name and the second is boolean
     # to descide if app will scroll to check the invisible elements
     [Template]  Check For Elements Existance TwoArg
