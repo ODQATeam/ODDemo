@@ -19,9 +19,9 @@ Test template for localization
     # you can't write 2 templates at same testcase you should write only one
     # this template takes 2 arguments first is element name and the second is boolean
     # to descide if app will scroll to check the invisible elements
-    #fake change
-
-    heloooooooooooo heend
+    # fake change
+    # try commit and push if it will push my local change to repository
+    # through Rclick on file > GIT>Commit file > select commit and push
     [Template]  Check For Elements Existance TwoArg
     ${Favorite_page}    ${false}
     ${Elgawal_text}     ${false}
