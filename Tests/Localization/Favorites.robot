@@ -22,7 +22,7 @@ Test template for localization
     # fake change
     # try commit and push if it will push my local change to repository
     # through Rclick on file > GIT>Commit file > select commit and push
-
+    #   test for commit+push
     [Template]  Check For Elements Existance TwoArg
     ${Favorite_page}    ${false}
     ${Elgawal_text}     ${false}
